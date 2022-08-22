@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" class="html">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap By SKILLHUB</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+
+<style>
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+      display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+      display: block;
+    }
+  }
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+
+  /* medium and up screens */
+  @media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+  }
+
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+    transform: translateX(0);
+  }
+
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+  }
+</style>
+<style>
+  html,
+  body {
+    background-image: url("https://hniesfp.imgix.net/8/images/detailed/206/just_eat_1.jpg?fit=fill&bg=0FFF&w=1500&h=1000&auto=format,compress");
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: auto;
+    position: relative;
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+    background-color: transparent;
+  }
+</style>
+
+<body class="bg-light">
+
+  <div class="container text-center my-3">
+    <h2 class="font-weight-light">Slider soft</h2>
+    <div class="row mx-auto my-auto justify-content-center">
+      <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://images.pexels.com/photos/10143892/pexels-photo-10143892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid">
+                </div>
+                <div class="card-img-overlay text-white text-white">Colazione Diego</div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://images.pexels.com/photos/11162364/pexels-photo-11162364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid">
+                </div>
+                <div class="card-img-overlay text-white">Colazione Riccardo</div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://images.pexels.com/photos/7551037/pexels-photo-7551037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid">
+                </div>
+                <div class="card-img-overlay text-white">Fiori d'estate'</div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://images.pexels.com/photos/6282718/pexels-photo-6282718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid">
+                </div>
+                <div class="card-img-overlay text-white">Balcone Sv/Seniors</div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://images.pexels.com/photos/5098508/pexels-photo-5098508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid">
+                </div>
+                <div class="card-img-overlay text-white">Grotta Scognamiglio</div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://images.pexels.com/photos/4414709/pexels-photo-4414709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid">
+                </div>
+                <div class="card-img-overlay text-white">Cuccioli Just Eat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="container-fluid bg-light reviews py-1 px-0 rounded-1 bg-opacity-10">
+        <div class="container py-4  ">
+          <div class="row py-0 py-xl-5 ">
+            <div class="col-12 ">
+              <h1 class="display-1 text-dark ">Stories</h1>
+            </div>
+          </div>
+          <div class="row  " data-masonry='{"percentPosition": true }'>
+            <div class="col-12 col-md-3 col-xl-4 mb-4 mt-3 ">
+              <div class="card rounded bg-light border-info">
+                <div class="card-body">
+                  <img src="https://images.pexels.com/photos/2274725/pexels-photo-2274725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid"alt="mare">
+                  <p class="card-text">Johnson helped motivate me to focus on my fitness goals more intentionally then I
+                    ever had before. We worked together to create a flexible personalized workout plan I was excited to
+                    do! She is driven, practical, and genuinely wants to know you as an individual. 10/10 would
+                    recommend!</p>
+                  <p class="card-title">- Alfredo</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-xl-4 mb-4 mt-3 animate__animated animate__rubberBand">
+              <div class="card rounded bg-light border-info">
+                <div class="card-body">
+                  <p class="card-text">I have been training with Johnson for about 7 months and her knowledge, expertise
+                    and passion for fitness has helped me tremendously in achieving my personal goals. I have worked
+                    with many trainers in both individual and group settings over the years and Johnson definitely
+                    stands out as one of the best! I love that Johnson personalizes her training sessions to each of her
+                    clients and it is easy to see that she truly cares about each persons individual goals and
+                    motivations. She knows exactly when I need an extra push and is always there to offer additional
+                    encouragement, guidance and knowledge about each exercise. Without hesitation, I would recommend
+                    Johnson to anyone looking for a personal trainer!</p>
+                  <p class="card-title">- Brian</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-xl-4 mb-4 mt-3 animate__animated animate__bounce animate__delay-2s">
+              <div class="card rounded bg-light border-info">
+                <div class="card-body">
+                  <p class="card-text">Lee is amazing at what she does! She has a passion for fitness and it shows when
+                    she's coaching you. Lee keeps things practical by giving you realistic goals that are sustainable;
+                    this helps keep me motivated and on track. I need lots of modifications due to being out of shape,
+                    stacked with numerous injuries, and Lee has no problem adjusting my workout accordingly. She makes
+                    me excited to show up and I truly appreciate her approach to a healthy lifestyle.</p>
+                  <p class="card-title">- Mario Winans</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-xl-4 mb-4 mt-3">
+              <div class="card rounded bg-light border-info">
+                <div class="card-body">
+                  <p class="card-text"> have trained with Johnson for nearly two years and she has made such a
+                    difference in my fitness. Always positive and encouraging, she has a way of making me want to go the
+                    extra mile and work harder. Her encouragement keeps me motivated at home to work on my fitness
+                    goals. When I was having massive back pain she modified my workouts and helped me find exercises
+                    that strengthened my back and reduced the pain. Love Johnson!</p>
+                  <p class="card-title">- Raffy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-xl-4 mb-4 mt-3">
+              <div class="card rounded bg-light border-info">
+                <div class="card-body">
+                  <p class="card-text">Johnson personalized training to fit my needs, my work schedule, and the limited
+                    home equipment I had. She modified anything that was hard on my knees. She’s very detailed oriented,
+                    organized and thoroughly explained what I would expect from her program. She’s also VERY VERY
+                    personable and easy to talk to about my fitness goals! She’s real y’all and that’s what I love most
+                    about her as a fitness trainer.</p>
+                  <p class="card-title">- Barbara</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-xl-4 mb-4 ">
+              <div class="card rounded bg-light border-info">
+                <div class="card-body">
+                  <p class="card-text">I trained with Johnson for about a 3-4 month span in the summer of 2019. Overall,
+                    the experience was great. She created an entire workout regimen catered to my fitness goals. I
+                    appreciated Johnson's attention to detail pertaining to any incorrect form or any bad habits I may
+                    have developed over the years, specifically pertaining to squat and deadlift exercises. She
+                    patiently spent week after week repeating these exercises with me until my form improved
+                    dramatically. With all that being said, Johnson is TOUGH! No short cuts allowed! I left every class
+                    drenched in sweat and pushed to the max, but ready for more. Be prepared to work!</p>
+                  <p class="card-title">- Mara</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-xl-4 mb-4">
+              <div class="card rounded bg-light border-info">
+                <div class="card-body">
+                  <p class="card-text">Training with Johnson has been great! She always brings good energy & positivity
+                    to each workout. Each session is challenging, she gives me the push I need all while keeping an eye
+                    on my form to offer effective adjustments. It is clear she truly enjoys sharing her fitness
+                    knowledge & helping others achieve better all around health.</p>
+                  <p class="card-title">- Fake Yanez</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-xl-4 mb-4">
+              <div class="card rounded bg-light border-info">
+                <div class="card-body">
+                  <p class="card-text">Just wanna say thank you for the effort that you put in, always helping me
+                    pushing my limits both physically and mentally. With all the things going on this year, 9Rounds has
+                    been keeping me cheerful the whole time.
+                    Hope you enjoy the upcoming holidays!</p>
+                  <p class="card-title">- Lopez Jen</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-xl-4 mb-4">
+              <div class="card rounded bg-light border-info">
+                <div class="card-body">
+                  <p class="card-text">Johnson energy is great, she’s very motivating, I’m always looking forward to
+                    working out with her, she’s my favorite trainer. She’s very knowledgeable about the workouts
+                    (correct body form, mechanics). She’s good at making new workouts approachable, like kickboxing
+                    which I’ve always wanted to try.</p>
+                  <p class="card-title">- Eome efe</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-xl-4 mb-4">
+              <div class="card rounded bg-light border-info">
+                <div class="card-body">
+                  <p class="card-text">I wanted to say that Lee was a game changer in my physical and mental health.
+                    She's been my instructor for a while now, and I can say with 100% certainty that she encouraged me
+                    to go to the gym every day and fall in love with the healthy routine I adopted. After I started
+                    training with her, not only my body, but my mind became healthier, happier and more consistent. She
+                    taught me that consistency is key to achieving your goals and that we don't need paranoia to become
+                    our best version. Other than that, she is a person who really cares about you, a real confidant.</p>
+                  <p class="card-title">- efe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        let items = document.querySelectorAll('.carousel .carousel-item')
+
+        items.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i=1; i<minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                  }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
